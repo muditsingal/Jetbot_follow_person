@@ -1,0 +1,12 @@
+
+while True:
+    try:
+        data = arduino.readline()
+        if data:
+            print(data)
+            print('Hi Arduino')
+    except:
+        arduino.close()
+
+
+
